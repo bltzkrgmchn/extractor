@@ -1,6 +1,4 @@
 # Attribute Extractor
-This repository contains code samples for ABAC attribute extractor. 
+Репозиторий содержит примеры кода компонента, предназначаенного для извлечения информации об изменении значений атрибутов безопасности из событий, возникающих в результате действий пользователей. 
 
-Attribute extractor is subscribed to numerous events witch are transformed into attribute changes. 
-
-Transformation logic depends on event type and each event transformation independent from others. 
+Компонент прослушивает множество очередей, сообщения в которых отличаются метками и содержимым. Для каждого события предусмотрен уникальный алгоритм извлечения изменений атрибутов, инкапсулированный в отдельном классе, который выбирается на основании метки сообщения. В зависимости от типа события, изменения атрибутов могут дополнять существующие значения атрибутов безопасности или полностью их изменять.
